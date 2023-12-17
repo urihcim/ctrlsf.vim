@@ -384,7 +384,7 @@ func! ctrlsf#PopulateQFList()
     if g:ctrlsf_populate_qflist
         call setqflist(qflist)
     endif
-    call setloclist(ctrlsf#win#FindMainWindow(), qflist)
+    call setloclist(ctrlsf#win#FindCallerWindow(), qflist)
 endf
 
 " CurrentMode()
